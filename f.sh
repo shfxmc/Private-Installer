@@ -5,8 +5,7 @@
 #
 
 # Get the current IP address of your VPS
-IP_ADDRESS=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
-
+IP_ADDRESS="$(curl -4skL http://ipinfo.io/ip)"
 
 sudo apt-get update && sudo apt-get install squid -y
 sleep 3s
