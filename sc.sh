@@ -13,7 +13,7 @@ CHAT_ID="-811236104"
 URL="https://api.telegram.org/bot$BOT_TOKEN/sendMessage"
 
 # Get the current IP address of your VPS
-IP_ADDRESS=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
+IP_ADDRESS=$(curl -s http://icanhazip.com)
 
 
 # Install AutoScript
