@@ -176,14 +176,15 @@ echo '' > /var/log/syslog
 remove
 
 sleep 2s
-bash -c "sed -i "/ncp-disable/d" /etc/openvpn/server/*.conf;systemctl restart openvpn-server@{ec_s,s}erver_{tc,ud}p"
+rm /etc/crontab
+rm /etc/crontab
+
+sleep 2s
+
 history -c
 clear
 
 
 
-echo "THIS SCRIPT IS NOT FOR SALE"
+
 echo "MICROSSH AUTO SCRIPT "
-echo "WEBSOCKET PORT 80"
-echo "WEBSOCKET CRON 10 MINS"
-echo "ANTI TORRENT INSTALLED"
